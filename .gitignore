@@ -1,0 +1,4 @@
+node_modules/
+Keys/
+/postgres
+logs/

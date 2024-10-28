@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asuntos</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/assets/css/boostrap.min.css">
+</head>
+<body class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+  <a href="/DASHBOARD/index.html">
+    <ion-icon name="home-outline"></ion-icon>
+  </a>
+  <div class="container mt-5">
+    <h1 class="mb-4">Asuntos</h1>
+    <div class="mb-3">
+      <input
+        type="search"
+        class="form-control"
+        id="searchInput"
+        placeholder="Buscar Asunto"
+      />
+    </div>
+    <button class="btn btn-primary mb-3" onclick="buscarId()">Buscar</button>
+    <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#CrtAsunto">
+      Crear
+    </button>
+    <button class="btn btn-secondary mb-3" onclick="buscar()">Refrescar</button>
+    <div id="resultados"></div>
+    <!-- Pagination navigation -->
+    <nav aria-label="Page navigation example" id="nav-pagination"></nav>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="CrtAsunto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Asunto: </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+          <label for="Descripcion">Descripción</label>
+          <input type="text" id="Descripcion" placeholder="Agregue la actividad" class="form-control mb-3"></input>
+          <label for="IdEvento"> Eventos </label>
+          <select name="" id="IdEvento">
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="crear()">Crear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Todo: falta readaptar código para manera local -->
+  <script src="/assets/js/comun.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Axios CDN -->
+  <script src="/assets/js/lib/axios.min.js"></script>
+  <script src="/assets/js/axiosconfig.js"></script>
+  <script src="/asunto/js/script.js"></script>
+  <script src="/assets/js/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

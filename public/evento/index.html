@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evento</title>
+
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="/assets/css/boostrap.min.css">
+  </head>
+  <body class="p-3 mb-2 bg-primary text-white">
+    <!-- Link to home page -->
+    <a href="/DASHBOARD/index.html" style="background-color: black;">
+      <ion-icon name="home-outline"></ion-icon>
+    </a>
+
+    <!-- Main container for the page content -->
+    <div class="container mt-5">
+      <h1 class="mb-4">Eventos</h1>
+
+      <!-- Search input field -->
+      <div class="mb-3">
+        <input
+          type="search"
+          class="form-control"
+          id="searchInput"
+          placeholder="Buscar Evento"
+        />
+      </div>
+
+      <!-- Buttons for searching by ID, creating a new event, and refreshing -->
+      <button class="btn btn-dark mb-3" onclick="buscarId()">Buscar</button>
+      <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#CrtEvento">
+        Crear
+      </button>
+      <button class="btn btn-secondary mb-3" onclick="buscar()">Refrescar</button>
+
+      <!-- Div to display search results -->
+      <div id="resultados"></div>
+
+      <!-- Pagination navigation -->
+      <nav aria-label="Page navigation example" id="nav-pagination"></nav>
+    </div>
+
+    <!-- Modal for creating a new event -->
+    <div class="modal fade" id="CrtEvento" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Eventos: </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+            <!-- Input fields for event details -->
+            <label for="Nombre_Evento">Nombre del Evento</label>
+            <input type="text" id="Nombre_Evento" placeholder="Agregue el nombre del Evento" class="form-control"></input>
+            <label for="fecha_inicio">Fecha de Inicio</label>
+            <input type="date" id="fecha_inicio" class="form-control"></input>
+            <label for="fecha_fin">Fecha de Fin</label>
+            <input type="date" id="fecha_fin" class="form-control"></input>
+            <label for="Habilitado">Disponible</label>
+            <div>
+              <input type="checkbox" id="Habilitado">
+              <label for="Habilitado">Habilitado</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- Buttons for closing the modal and creating a new event -->
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" onclick="crear()">Crear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ionicons script for icons -->
+    <script src="/assets/js/comun.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  <!-- ---------------------------------------------------------------- -->
+    <!-- Axios CDN for making HTTP requests -->
+    <script src="/assets/js/lib/axios.min.js"></script>
+    <script src="/assets/js/axiosconfig.js"></script>
+
+    <!-- Custom JavaScript file -->
+    <script src="/evento/js/script.js"></script>
+
+    <!-- Bootstrap JavaScript bundle -->
+    <script
+      src="/assets/js/lib/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espacios de Clase</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/boostrap.min.css">
+  </head>
+  <body class="bg-secondary">
+    <a href="/DASHBOARD/index.html">
+      <ion-icon name="home-outline"></ion-icon>
+    </a>
+    <div class="container mt-5">
+      <h1 class="mb-4">Espacios de Clase</h1>
+      <div class="mb-3">
+        <input
+          type="search"
+          class="form-control"
+          id="searchInput"
+          placeholder="Buscar Espacio de Clase"
+        />
+      </div>
+      <button class="btn btn-primary mb-3" onclick="buscarId()">Buscar</button>
+      <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#CrtEspacio">
+        Crear
+      </button>
+      <button class="btn btn-dark mb-3" onclick="buscar()">Refrescar</button>
+      <div id="resultados"></div>
+      <!-- Pagination navigation -->
+      <nav aria-label="Page navigation example" id="nav-pagination"></nav>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="CrtEspacio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+      <div class="modal-header mb-2 bg-secondary">
+      <h1 class="modal-title fs-5" id="staticBackdropLabel">Espacio de Clase: </h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+  <div class="modal-body">
+    <label for="Nombre">Nombre del Espacio</label>
+    <input type="text" id="Nombre" placeholder="Agregue el nombre del Espacio" class="form-control"></input>
+    <label for="Abreviatura">Abreviatura</label>
+    <input type="text" id="Abreviatura" class="form-control" placeholder="Agregar Abreviatura"></input>
+    <label for="Capacidad">Capacidad</label>
+    <input type="number" id="Capacidad" class="form-control"></input>
+    <label class="mb-3">Situación</label>
+    <div class="mb-3">
+      <input type="radio" id="Vigente" name="situacion" value="1" checked />
+      <label for="Vigente">Vigente</label>
+      <input type="radio" id="Inactivo" name="situacion" value="2"/>
+      <label for="Inactivo">Inactivo</label>
+    </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+  <button type="button" class="btn btn-primary" onclick="crear()">Crear</button>
+</div>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <script src="/assets/js/comun.js"></script>
+      <script
+          type="module"
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Axios CDN -->
+    <script src="/assets/js/lib/axios.min.js"></script>
+    <script src="/assets/js/axiosconfig.js"></script>
+    <script src="/espaciosDeClase/js/script.js"></script>
+    <script src="/assets/js/lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

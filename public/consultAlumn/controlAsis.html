@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/consultAlumn/ControlAsis-data.css">
+    <link rel="stylesheet" href="/consultAlumn/responsive/responsive.css">
+    <title>Document</title>
+</head>
+<body id="htmlBody">
+    <div class="homeDiv">
+        <a href="/index.html">
+            <img src="/consultAlumn/resources/direction.svg" alt="">
+        </a>
+    </div>
+    <div class="invi-back invi-back-hiden" id="pageInvits">
+        <div class="invi-back-contwhite">
+            <div class="contwhite-one-header">
+                <div class="icon-circles">
+                    <div class="icon-circle-colors icon-circle-colors-red"></div>
+                    <div class="icon-circle-colors icon-circle-colors-yellow"></div>
+                    <div class="icon-circle-colors icon-circle-colors-green"></div>
+                </div>
+                <div class="report-back-data-circle report-back-data-circle-spac" id="exVisitClosed">
+                    <img src="/consultAlumn/resources/close.svg" alt="">
+                </div>
+            </div>
+            <div class="contwhite-one-body">
+                <div class="contwhite-one-body-one">
+                    <div class="contwhite-one-body-one-img">
+                        <img src="/consultAlumn/resources/profile.svg" alt="">
+                    </div>
+                    <div class="contwhite-one-body-two">
+                        <div class="contwhite-one-body-two-text">
+                            <h4>Informacion del visitante</h4>
+                        </div>
+                        <div class="contwhite-one-body-two-name">
+                            <input type="text" class="contwhite-one-body-two-name-inp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contwhite-one-body-tree">
+               <div class="contwhite-one-body-tree-div">
+                    <div class="contwhite-one-body-tree-div-child">
+                        <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-asunto">Asunto:</label>
+                        <input type="text" class="two-frst-fechaini-inp body-tree-div-child-wht">
+                    </div>
+                    <div class="contwhite-one-body-tree-div-child">
+                        <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-tel">Telefono:</label>
+                        <input type="text" class="two-frst-fechaini-inp">
+                    </div>
+               </div>
+               <div class="contwhite-one-body-tree-div">
+                    <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-proce personal-data-one-inf-label-spacing">Procedencia:</label>
+                    <input type="text" class="two-frst-fechaini-inp body-tree-div-child-proce">
+               </div>
+               <div class="contwhite-one-body-tree-div">
+                    <div class="contwhite-one-body-tree-div-mtc">
+                        <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-mtr personal-data-one-inf-label-spacing">Matricula:</label>
+                        <input type="text" class="two-frst-fechaini-inp body-tree-div-child-mtc">
+                    </div>
+                    <div class="contwhite-one-body-tree-div-fgf">
+                        <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-spacing">Fecha que genero ficha:</label>
+                        <input type="text" class="two-frst-fechaini-inp body-tree-div-child-fgf">
+                    </div>
+                    <div class="contwhite-one-body-tree-div-pict">
+                        <label for="" class="personal-data-one-inf-label personal-data-one-inf-labelvia">Via:</label>
+                        <div class="contwhite-one-body-tree-div-pict-img">
+                            <img src="/consultAlumn/resources/car.svg" alt="" srcset="" id="viaVisitante">
+                        </div>
+                        <div class="carrera-data-second-via-wind carrera-data-second-via-wind-spacing carrera-data-second-via-wind-display" id="dispVisit">
+                            <div class="second-via-wind-header">
+                                <div class="second-via-wind-header-circles via-wind-header-circles-red"></div>
+                                <div class="second-via-wind-header-circles via-wind-header-circles-yellow"></div>
+                                <div class="second-via-wind-header-circles via-wind-header-circles-green"></div>
+                                <div class="second-via-wind-header-circlose" id="visitclosed">
+                                    <img src="/consultAlumn/resources/close.svg" alt="" class="wind-header-circlose-ex">
+                                </div>
+                            </div>
+                            <!-- este apartado activarlo cuando ya este listas las consultas se usa para carro -->
+
+                            <div class="second-via-wind-car">
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Modelo:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Marca:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp-m">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Placas:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Año:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp-a">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Color:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp-c">
+                                </div>
+                            </div>
+
+                            <!-- este apartado activarlo cuando ya este listas las consultas se usa para motos -->
+
+                            <!-- <div class="second-via-wind-car">
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Modelo:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Marca:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp-m">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Placas:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Año:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp-a">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Color:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp-c">
+                                </div>
+                            </div> -->
+
+                            <!-- este apartado activarlo cuando ya este listas las consultas se usa para vicicletas -->
+
+                            <!-- <div class="second-via-wind-car">
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Modelo:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Marca:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp-m">
+                                </div>
+                                <div class="via-wind-car-atrib">
+                                    <label for="" class="two-firtpart-style-label">Color:</label>
+                                    <input type="text" class="personal-data-one-inf-model via-wind-car-inp-c">
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="report-back personal-data-invhiden" id="reportBack">
+        <div class="report-back-data" id="expandWhite">
+            <div class="report-back-data-one">
+                <div class="icon-circles">
+                    <div class="icon-circle-colors icon-circle-colors-red"></div>
+                    <div class="icon-circle-colors icon-circle-colors-yellow"></div>
+                    <div class="icon-circle-colors icon-circle-colors-green"></div>
+                </div>
+                <div class="report-back-data-one-title">
+                    <h4>REPORTES</h4>
+                </div>
+                <div class="report-back-data-circle" id="reportClose">
+                    <img src="/consultAlumn/resources/close.svg" alt="">
+                </div>
+            </div>
+            <!-- parte uno de la data para los reportes -->
+            <div class="report-back-data-two">
+                <div class="report-back-data-two-frst">
+                    <div class="report-data-two-frst-fechaini">
+                        <label for="" class="personal-data-one-inf-label">Fecha Inicio</label>
+                        <input type="date" name="" class="two-frst-fechaini-inp">
+                    </div>
+                    <div class="report-data-two-frst-fechafin">
+                        <label for="" class="personal-data-one-inf-label">Fecha Fin</label>
+                        <input type="date" name="" class="two-frst-fechaini-inp">
+                    </div>
+                    <div class="report-data-two-frst-personType">
+                        <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-typep">Tipo Persona</label>
+                        <select name="typeperson" id="selectPerson" class="frst-persontype-select frst-persontype-select-pading personal-data-one-inf-label-tp">
+                            <option value="option0" selected class="frst-persontype-select-option"></option>
+                            <option value="estudiante" class="frst-persontype-select" >ESTUDIANTE</option>
+                            <option value="invitado" class="frst-persontype-select" >INVITADO</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- parte tres de la data para los reportes -->
+            <div class="report-back-data-four" id="dataEstudentsHiden">
+                <div class="report-data-four-fst">
+                    <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-cr">Carrera</label>
+                    <select name="" id="" class="frst-persontype-select frst-persontype-select-pading report-data-four-fst-sel personal-data-one-inf-label-tp">
+                        <option value="option0" selected class="frst-persontype-select-option"></option>
+                        <option value="option1" class="frst-persontype-select frst-persontype-select-spacing">ING INFORMATICA</option>
+                        <option value="option2" class="frst-persontype-select frst-persontype-select-spacing">ING INDUSTRIAL</option>
+                        <option value="option3" class="frst-persontype-select frst-persontype-select-spacing">ING ELECTROMECANICA</option>
+                        <option value="option4" class="frst-persontype-select frst-persontype-select-spacing">ING IND ALIMENTARIAS</option>
+                        <option value="option5" class="frst-persontype-select frst-persontype-select-spacing">ING INNOV AGRIC SUST</option>
+                        <option value="option6" class="frst-persontype-select frst-persontype-select-spacing">ING FORESTAL</option>
+                        <option value="option7" class="frst-persontype-select frst-persontype-select-spacing">LIC CONTADURIA</option>
+                        <option value="option8" class="frst-persontype-select frst-persontype-select-spacing">GASTRONOMIA</option>
+                    </select>
+                </div>
+                <div class="report-data-four-fst">
+                    <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-grad">Grado</label>
+                    <select name="" id="" class="frst-persontype-select frst-persontype-select-pading personal-data-one-inf-label-tp">
+                        <option value="option0" selected class="frst-persontype-select-option"></option>
+                        <option value="option1" class="frst-persontype-select">1°</option>
+                        <option value="option2" class="frst-persontype-select">2°</option>
+                        <option value="option3" class="frst-persontype-select">3°</option>
+                        <option value="option4" class="frst-persontype-select">4°</option>
+                        <option value="option5" class="frst-persontype-select">5°</option>
+                        <option value="option6" class="frst-persontype-select">6°</option>
+                        <option value="option7" class="frst-persontype-select">7°</option>
+                        <option value="option8" class="frst-persontype-select">8°</option>
+                        <option value="option9" class="frst-persontype-select">9°</option>
+                        <option value="option10" class="frst-persontype-select">10°</option>
+                        <option value="option11" class="frst-persontype-select">11°</option>
+                        <option value="option12" class="frst-persontype-select">12°</option>
+                    </select>
+                </div>
+                <div class="report-data-four-fst">
+                    <label for="" class="personal-data-one-inf-label personal-data-one-inf-label-gp">Grupo</label>
+                    <select name="" id="" class="frst-persontype-select frst-persontype-select-pading personal-data-one-inf-label-tp">
+                        <option value="option0" selected class="frst-persontype-select-option"></option>
+                        <option value="option1" class="frst-persontype-select">"A"</option>
+                        <option value="option1" class="frst-persontype-select">"B"</option>
+                        <option value="option1" class="frst-persontype-select">"C"</option>
+                        <option value="option1" class="frst-persontype-select">"D"</option>
+                    </select>
+                </div>
+            </div>
+            <!-- parte dos de la data para los reportes -->
+            <div class="report-back-data-three">
+                <div class="report-back-data-two-frst-name">
+                    <input type="text" class="data-two-frs-name-inp" placeholder="Nombre del estudiante" id="inputNameWhite">
+                    <div class="report-back-data-two-frst-circle">
+                        <img src="/consultAlumn/resources/profile.svg" alt="" class="data-two-frst-circle-img">
+                    </div>
+                </div>
+                <div class="report-data-two-frst-control">
+                    <input type="text" class="data-two-frst-control-inpt" placeholder="Número de control" id="inputnumberWhite">
+                    <div class="report-back-data-two-frst-circle">
+                        <img src="/consultAlumn/resources/control.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="report-back-data-five">
+                <button type="button" class="report-back-data-five-button">Generar reporte</button>
+            </div>
+        </div>
+    </div>
+    <div class="active-eye active-eye-display" id="activeEye">
+        <div class="eyes-back">
+            <div class="box-icon">
+                <div class="icon-circles">
+                    <div class="icon-circle-colors icon-circle-colors-red"></div>
+                    <div class="icon-circle-colors icon-circle-colors-yellow"></div>
+                    <div class="icon-circle-colors icon-circle-colors-green"></div>
+                </div>
+                <div class="icon-circle" id="eyeClosed">
+                    <img src="/consultAlumn/resources/close.svg" alt="" srcset="" class="icon-img">
+                </div>
+            </div>
+            <div class="box-eye-data">
+                <div class="box-eye-personal-data">
+                    <div class="box-eye-personal-data-one">
+                        <div class="box-eye-personal-data-one">
+                            <div class="personal-data-one-profile">
+                                <img src="/consultAlumn/resources/profile.svg" alt="" class="personal-data-one-profile-img">
+                            </div>
+                            <div class="personal-data-one-inf">
+                                <div class="personal-data-one-inf-titile">
+                                    <h1>DATOS PERSONALES</h1>
+                                </div>
+                                <div class="personal-data-one-inf-name">
+                                    <input type="text" class="personal-data-one-inf-model personal-data-one-inf-name-inp">
+                                </div>
+                                <div class="personal-data-one-inf-curp">
+                                    <label for="" class="personal-data-one-inf-label">Curp: </label>
+                                    <input type="text" class="personal-data-one-inf-model data-one-inf-curp-inp">
+                                </div>
+                                <div class="personal-data-one-inf-sangre">
+                                    <label for="" class="personal-data-one-inf-label">Tipo sanguineo:</label>
+                                    <input type="text" class="personal-data-one-inf-model">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-eye-personal-data-two">
+                        <div class="personal-data-two-firtpart">
+                            <div class="two-firtpart-style">
+                                <label for="" class="two-firtpart-style-label two-firtpart-style-o">Telefono</label>
+                                <input type="text" class="two-firtpart-style-inp">
+                            </div>
+                            <div class="two-firtpart-style">
+                                <label for="" class="two-firtpart-style-label two-firtpart-style-e">Edad</label>
+                                <input type="text" class="two-firtpart-style-inp">
+                            </div>
+                            <div class="two-firtpart-style">
+                                <label for="" class="two-firtpart-style-label two-firtpart-style-f">Fecha de nacimiento</label>
+                                <input type="text" class="two-firtpart-style-inp">
+                            </div>
+                        </div>
+                        <div class="personal-data-two-secndpart">
+                            <label for="" class="two-firtpart-style-label">Direccion:</label>
+                            <input type="text" class="personal-data-two-inp personal-data-one-inf-model">
+                        </div>
+                    </div>
+                </div>
+                <div class="box-eye-carrera-data">
+                    <div class="carrera-data-title">
+                        <h2>DATOS INSTITUCIONALES</h2>
+                    </div>
+                    <div class="carrera-data-first">
+                        <div class="carrera-data-cont">
+                            <label for="" class="two-firtpart-style-label carrera-data-cont-g">Grado</label>
+                            <input type="text" class="two-firtpart-style-inp">
+                        </div>
+                        <div class="carrera-data-cont">
+                            <label for="" class="two-firtpart-style-label carrera-data-cont-gr">Grupo</label>
+                            <input type="text" class="two-firtpart-style-inp">
+                        </div>
+                        <div class="carrera-data-cont">
+                            <label for="" class="two-firtpart-style-label carrera-data-cont-s">Semestre</label>
+                            <input type="text" class="two-firtpart-style-inp">
+                        </div>
+                    </div>
+                    <div class="carrera-data-second">
+                        <div class="carrera-data-second-carrer">
+                            <label for="" class="two-firtpart-style-label carrera-data-second-carrer-c">Carrera:</label>
+                            <input type="text" name="" id="" class="personal-data-one-inf-model">
+                        </div>
+                        <div class="carrera-data-second-carrer">
+                            <label for="" class="two-firtpart-style-label carrera-data-second-correo-m">Matricula:</label>
+                            <input type="text" name="" id="" class="personal-data-one-inf-model personal-data-second-inp">
+                        </div>
+                    </div>
+                    <div class="carrera-data-thr">
+                        <div class="carrera-data-thr-coreo">
+                            <label for="" class="two-firtpart-style-label carrera-data-thr-coreo-m">Correo institucional</label>
+                            <input type="text" class="personal-data-one-inf-model personal-data-tr-inp">
+                        </div>
+                        <div class="carrera-data-second-horario">
+                            <label for="" class="two-firtpart-style-label">Horario</label>
+                            <div class="personal-data-one-inf-img">
+                                <img src="/consultAlumn/resources/timetable.svg" alt="" class="timetable-img">
+                            </div>
+                        </div>
+                        <div class="carrera-data-second-via">
+                            <label for="" class="two-firtpart-style-label">Via:</label>
+                            <div class="personal-data-one-inf-img" id="dataViaOpen">
+                                <img src="/consultAlumn/resources/car.svg" alt="" class="timetable-img" id="carpicture">
+                            </div>
+                            <div class="carrera-data-second-via-wind carrera-data-second-via-wind-display" id="dataVia">
+                                <div class="second-via-wind-header">
+                                    <div class="second-via-wind-header-circles via-wind-header-circles-red"></div>
+                                    <div class="second-via-wind-header-circles via-wind-header-circles-yellow"></div>
+                                    <div class="second-via-wind-header-circles via-wind-header-circles-green"></div>
+                                    <div class="second-via-wind-header-circlose" id="dataViaClosed">
+                                        <img src="/consultAlumn/resources/close.svg" alt="" class="wind-header-circlose-ex">
+                                    </div>
+                                </div>
+
+                                <!-- este apartado activarlo cuando ya este listas las consultas se usa para carro -->
+
+                                <div class="second-via-wind-car">
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Modelo:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Marca:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp-m">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Placas:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Año:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp-a">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Color:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp-c">
+                                    </div>
+                                </div>
+
+                                <!-- este apartado activarlo cuando ya este listas las consultas se usa para motos -->
+
+                                <!-- <div class="second-via-wind-car">
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Modelo:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Marca:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp-m">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Placas:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Año:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp-a">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Color:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp-c">
+                                    </div>
+                                </div> -->
+
+                                <!-- este apartado activarlo cuando ya este listas las consultas se usa para vicicletas -->
+
+                                <!-- <div class="second-via-wind-car">
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Modelo:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Marca:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp-m">
+                                    </div>
+                                    <div class="via-wind-car-atrib">
+                                        <label for="" class="two-firtpart-style-label">Color:</label>
+                                        <input type="text" class="personal-data-one-inf-model via-wind-car-inp-c">
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-eye-tutor-data">
+                    <div class="tutor-data-title">
+                        <h3>DATOS DEL TUTOR</h3>
+                    </div>
+                    <div class="tutor-data-first">
+                        <div class="tutor-data-first-one">
+                            <label for="" class="personal-data-one-inf-label tutor-data-first-one-n">Nombre del tutor</label>
+                            <input type="text" class="personal-data-one-inf-model tutor-data-fist-inp">
+                        </div>
+                        <div class="tutor-data-first-two">
+                            <label for="" class="personal-data-one-inf-label tutor-data-first-two-t">Telefono</label>
+                            <input type="text" class="personal-data-one-inf-model">
+                        </div>
+                    </div>
+                    <div class="tutor-data-second">
+                        <label for="" class="personal-data-one-inf-label tutor-data-second-d">Direccion</label>
+                        <input type="text" class="personal-data-one-inf-model">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="principal__Header">
+        <div class="table-header">
+            <div class="header-search-name">
+                <input type="text" id="inputName" placeholder="Nombre del estudiante"  class="name-input">
+                <div class="circles-input-div name-input-div" id="name">
+                    <img src="/consultAlumn/resources/profile.svg" alt="" class="divs-img">
+                </div>
+                <div class="circles-input-div report-input-div">
+                    <img src="/consultAlumn/resources/print.svg" id="circleReport">
+                </div>
+            </div>
+            <div class="header-search">
+                <input type="number" placeholder="Número de control" class="number-input" id="controlImput">
+                <div class="circles-input-div number-input-div" id="control">
+                    <img src="/consultAlumn/resources/control.svg" alt="">
+                </div>
+            </div>
+            <div class="header-search header-search-switch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div  class="header-search header-search-date">
+                <div class="input-date">
+                    <input type="date" class="input-date-sty">
+                </div>
+            </div>
+            <div class="header-search">
+                <button type="button" class="button-search" id="prinButtonn">Buscar</button>
+                <!-- <button type="button" class="button-search" onclick="searchControlById()" id="prinButton">Buscar</button> -->
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr class="table__row table__row-direct">
+                    <th class="table__head">Id</th>
+                    <th class="table__head">Persona</th>
+                    <th class="table__head">Lugar</th>
+                    <th class="table__head">Estatus</th>
+                    <th class="table__head">Dia</th>
+                    <th class="table__head">Entrada</th>
+                    <th class="table__head">Salida</th>
+                    <th class="table__head">Data</th>
+                </tr>
+                <tr class="table__row table__row-hover table_row-color-trasparent">
+                    <td>
+                        <div class="apadt-div">
+                            <p class="triangle__id">201000036935</p>
+                        </div>
+                    </td>
+                    <td>Estudiante</td>
+                    <td>Principal</td>
+                    <td>
+                        <div class="apadt-div">
+                            <p class="div__status-ingreso">Ingreso</p>
+                        </div>
+                    </td>
+                    <td>30/01/2024</td>
+                    <td>13:00</td>
+                    <td></td>
+                    <td>
+                        <div class="row-button clickEyes">
+                            <img src="/consultAlumn/resources/eyes.svg" alt="">
+                        </div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="table-content">
+
+                <tr class="table__row">
+                    <td  class="finish-td">
+                        <img src="/consultAlumn/resources/row-left.svg">
+                    </td>
+                    <td class="finish-td"></td>
+                    <td class="finish-td"></td>
+                    <td class="finish-td"></td>
+                    <td class="finish-td"></td>
+                    <td class="finish-td"></td>
+                    <td class="finish-td"></td>
+                    <td class="finish-td">
+                        <img src="/consultAlumn/resources/row-rigth.svg">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/comun.js"></script>
+    <script src="/assets/js/axiosconfig.js"></script>
+    <script src="/consultAlumn/Control-asis-front-end.js"></script>
+    <script src="/consultAlumn/control-asis-back-end.js"></script>
+</body>
+</html>

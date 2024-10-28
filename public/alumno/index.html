@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumnos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/boostrap.min.css" />
+  </head>
+  <body class="bg-success-subtle">
+    <a href="/DASHBOARD/index.html">
+      <ion-icon name="home-outline"></ion-icon>
+    </a>
+    <div class="container mt-5">
+      <h1 class="mb-4">Alumnos</h1>
+      <div class="mb-3">
+        <input
+          type="search"
+          class="form-control"
+          id="searchInput"
+          placeholder="Buscar Alumno"
+        />
+      </div>
+      <button class="btn btn-primary mb-3" onclick="buscarId()">Buscar</button>
+      <button class="btn btn-secondary mb-3" onclick="buscar()">
+        Refrescar
+      </button>
+      <div id="resultados"></div>
+      <!-- Pagination navigation -->
+      <nav aria-label="Page navigation example" id="nav-pagination"></nav>
+    </div>
+
+    <script src="/assets/js/comun.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <!-- <script type="module" src="../assets/js/lib/ionicons.esm.js"></script> -->
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- <script module src="../assets/js/lib/ionicons.js"></script> -->
+    <!-- Axios CDN -->
+    <script src="/assets/js/lib/axios.min.js"></script>
+    <script src="/assets/js/axiosconfig.js"></script>
+    <script src="/alumno/js/script.js"></script>
+    <script src="/assets/js/lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

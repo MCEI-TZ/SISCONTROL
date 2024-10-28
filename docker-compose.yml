@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql-server
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "123456" # Cambia esto por tu contraseña segura
+      MSSQL_PID: "Developer"  # Puedes cambiar esto según la edición que desees
+    ports:
+      - "1433:1433"

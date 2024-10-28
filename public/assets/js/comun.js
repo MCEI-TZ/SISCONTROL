@@ -1,0 +1,1 @@
+const generalDate = this.location.origin;

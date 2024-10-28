@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="mt-5">Login</h1>
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="userType">Tipo de Usuario</label>
+              <select class="form-control" id="userType" required>
+                <option value="1">Alumno</option>
+                <option value="2">Docente</option>
+                <option value="3">Visitante</option>
+                <option value="4">Admin</option>
+                <!-- Agrega más opciones según sea necesario -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="numControl">NumControl</label>
+              <input
+                type="string"
+                class="form-control"
+                id="numControl"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="curp">password</label>
+              <input type="password" class="form-control" id="curp" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/comun.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

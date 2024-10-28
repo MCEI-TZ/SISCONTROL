@@ -1,0 +1,138 @@
+@media screen and (max-width: 1499px){
+
+    /* body, html{
+        background-color: red;
+    } */
+
+    .table{
+        width: 1300px;
+    }
+    
+    .table__row{
+        font-size: 13px;
+    }
+
+    .table__row{
+        font-size: 14px;
+    }
+
+    .triangle__id::before{
+        left: -38px;
+        top: -3px;
+    }
+
+    /* Data of stdents */
+
+
+    /* heder main */
+    .table-header{
+        width: 1300px;
+    }
+
+    .name-input-div{
+        right: 4.8%;
+    }
+    
+    .number-input-div{
+        right: 47.99%;
+    }
+    
+    .date-input-div{
+        right: 15.5%;
+        top: 16px;
+    }
+
+    .table__head{
+        font-size: 0.75rem;
+    }
+
+    .number-input{
+        font-size: 0.91rem;
+    }
+
+    .name-input{
+        font-size: 0.94rem;
+    }
+
+    .switch::after{
+        font-size: 0.94rem;
+    }
+
+    .input-date-sty{
+        font-size: 0.94rem;
+       }
+    
+    
+}
+
+ @media screen and (min-width: 1501px) and (max-width: 1700px) {
+
+    /* body, html{
+        background-color: green;
+    } */
+
+    .table{
+        width: 1500px;
+        
+    } 
+
+    .table__row{
+        font-size: 17px;
+    }
+
+    .div__status-ingreso::before{
+        left: -19px;
+        bottom: 5px;
+    }
+    
+    .div__status-egreso::before{
+        left: -19px;
+        bottom: 5px;
+    }
+    
+    .triangle__id::before{
+        left: -37px;
+        top: -3px;
+    }
+
+   /* heder main */
+   .table-header{
+    width: 1500px;
+}
+
+.name-input-div{
+    right: 5%;
+}
+
+.number-input-div{
+    right: 47.99%;
+}
+
+.date-input-div{
+    right: 15.5%;
+    top: 16px;
+}
+
+.table__head{
+    font-size: 0.75rem;
+}
+
+.number-input{
+    font-size: 0.91rem;
+}
+
+.name-input{
+    font-size: 0.94rem;
+}
+
+.switch::after{
+    font-size: 0.94rem;
+}
+
+.input-date-sty{
+    font-size: 0.94rem;
+   font-size: 0.94rem;
+       }
+}
+    
+
