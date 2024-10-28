@@ -1,6 +1,3 @@
-
-
-
 const contenedorQR = document.getElementById("newQrData");
 document.addEventListener("DOMContentLoaded", function () {
   const token = localStorage.getItem("token");
@@ -18,11 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
       const qrData = {
         idTipo: Number(idTipo), // Esto se puede ajustar según el tipo de usuario
         NumControl: Number(NumControl),
+        CurrentDate:Date()
       };
 
+      console.info(qrData)
+
+      encryptedData=btoa(JSON.stringify(qrData))
+    
       const QR = new QRCode(contenedorQR);
 
-      QR.makeCode(JSON.stringify(qrData));
+      QR.makeCode(JSON.stringify(encryptedData));
+
+      console.info(encryptedData)
 
       const completeName = document.getElementById('ComplateNameDta');
 
