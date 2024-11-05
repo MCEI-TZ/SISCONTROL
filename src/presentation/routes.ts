@@ -19,23 +19,23 @@ import { AuthAdminRoutes } from "./auth/routes";
 export class AppRoutes {
   static get routes(): Router {
     const router = Router();
-    router.use("/api/alumnos", AlumnoRoutes.routes); // todo: Gets, Get // Falta Put, Post, Delete
-    router.use("/api/asuntos", AsuntoRoutes.routes); //* Gets // POST // GET // PUT // DELETE -> ++COMPLETED
-    router.use("/api/AutosAlumnos", AutosAlumnosRoutes.routes); //todo: Gets // POST // GET // Falta PUT y DELETE
-    router.use("/api/AutosDoces", AutosDocesRoutes.routes); // todo: Gets //
-    router.use("/api/AutosVisitantes", AutoVisitanteRoutes.routes); //todo: Gets //
-    router.use("/api/ControlAsis", ControlAsisRoutes.routes); // * GETS // DELETE // POST // GET // PUT -> ++COMPLETED
-    router.use("/api/Docente", DocenteRoutes.routes); // todo: Gets / Get // Falta Post, Put y delete
-    router.use("/api/EspaciosDeClase", EspaciosDeClaseRoutes.routes); //* Gets // Get // PUT // POST // DELETE -> ++COMPLETED
-    router.use("/api/Evento", EventoRoutes.routes); //* Gets // POST // PUT // GET // DELETE  -> ++COMPLETED
-    router.use("/api/TipoPersona", TipoPersonaRoutes.routes); //*Gets //POST// PUT // DELETE // GET ->  ++COMPLETED
-    router.use("/api/TipoTransport", TipoTransportRoutes.routes); //* Gets // POST // GET // PUT // DELETE -> ++COMPLETED
-    router.use("/api/Vehiculo", VehiculosRoutes.routes); //* Gets // POST // GET // PUT // DELETE -> ++COMPLETED
-    router.use("/api/Visitante", VisitanteRoutes.routes); //* Gets // POST // GET // PUT // DELETE -> ++COMPLETED
-    router.use("/api/carrera", CarreraRoutes.routes);
-    router.use("/api/departamento", DepartamentosRoutes.routes);
-    router.use("/api/authAlumno", AuthAlumnoRoutes.routes);
-    router.use("/api/authAdmin", AuthAdminRoutes.routes);
+    router.use("/api/alumnos", AlumnoRoutes.routes); //* working
+    router.use("/api/asuntos", AsuntoRoutes.routes); //* Working
+    // router.use("/api/AutosAlumnos", AutosAlumnosRoutes.routes); 
+    // router.use("/api/AutosDoces", AutosDocesRoutes.routes); 
+    // router.use("/api/AutosVisitantes", AutoVisitanteRoutes.routes); 
+    router.use("/api/ControlAsis", ControlAsisRoutes.routes); 
+    router.use("/api/Docente", DocenteRoutes.routes); //* working
+    router.use("/api/EspaciosDeClase", EspaciosDeClaseRoutes.routes); //* Working
+    router.use("/api/Evento", EventoRoutes.routes); //* Working
+    router.use("/api/TipoPersona", TipoPersonaRoutes.routes); //* Working
+    router.use("/api/TipoTransport", TipoTransportRoutes.routes); //* Working
+    router.use("/api/Vehiculo", VehiculosRoutes.routes);//TODO: Fail to POST 
+    router.use("/api/Visitante", VisitanteRoutes.routes); //todo: fail to post 
+    router.use("/api/carrera", CarreraRoutes.routes); //*working
+    router.use("/api/departamento", DepartamentosRoutes.routes);//* Working
+    router.use("/api/authAlumno", AuthAlumnoRoutes.routes);//* Working
+    router.use("/api/authAdmin", AuthAdminRoutes.routes); //* Working
     return router;
   }
 }

@@ -64,9 +64,9 @@ document
       // Aplicar estilos a los encabezados
       ["A1", "B1", "C1", "D1", "E1"].forEach((cell) => {
         worksheet.getCell(cell).font = {
-          name: "Comic Sans MS",
+          name: "nomospace",
           family: 4,
-          size: 12,
+          size: 14,
           bold: true,
         };
         worksheet.getCell(cell).alignment = {
@@ -107,7 +107,7 @@ document
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "reporte.xlsx";
+      a.download = "Reporte_"+NumControl+".xlsx";
       document.body.appendChild(a);
       a.click();
 

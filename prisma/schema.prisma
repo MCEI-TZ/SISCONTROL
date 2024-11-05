@@ -88,7 +88,7 @@ model AsistenciaAlumno {
 }
 
 model Asunto {
-  IdAsunto    Int         @id @default(autoincrement()) @map("IdAsunto")
+  IdAsunto    Int         @id @default(autoincrement())
   Descripcion String      @db.NVarChar(50)
   IdEvento    Int
   Evento      Evento      @relation(fields: [IdEvento], references: [IdEvento], onUpdate: NoAction, map: "FK_Asunto_Evento")
@@ -213,7 +213,7 @@ model Certificados {
 }
 
 model ControlAsis {
-  IdControlAsis   Int             @id @default(autoincrement()) @map("IdControlAsis")
+  IdControlAsis   Int             @id @default(autoincrement())
   NumControl      Int?
   IdDoce          Int?
   idVisitante     Int?
@@ -580,11 +580,11 @@ model EstadosRepublica {
 }
 
 model Evento {
-  IdEvento      Int      @id @default(autoincrement()) @map("IdEvento")
+  IdEvento      Int      @id @default(autoincrement())
   Nombre_Evento String   @db.NVarChar(70)
   fecha_inicio  DateTime @db.DateTime
   fecha_fin     DateTime @db.DateTime
-  Habilitado    Boolean  @db.Bit
+  Habilitado    Boolean
   Asunto        Asunto[]
 }
 
@@ -1023,7 +1023,7 @@ model sysdiagrams {
 }
 
 model TipoPersona {
-  IdTipo      Int           @id @default(autoincrement()) @map("IdTipo")
+  IdTipo      Int           @id @default(autoincrement())
   Descripcion String        @db.VarChar(50)
   ControlAsis ControlAsis[]
   Vehiculo    Vehiculo[]
@@ -1036,7 +1036,7 @@ model TiposIngresoAlumno {
 }
 
 model tipoTransport {
-  IdTpTransp  Int           @id @default(autoincrement()) @map("IdTpTransp")
+  IdTpTransp  Int           @id @default(autoincrement())
   Nombre      String        @db.NVarChar(50)
   ControlAsis ControlAsis[]
 }
