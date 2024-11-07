@@ -4,3 +4,4 @@ Keys/
 logs/
 prisma/migrations/
 prisma/
+dist/

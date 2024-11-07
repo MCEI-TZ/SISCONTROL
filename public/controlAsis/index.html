@@ -5,133 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Control de Asistencias</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/assets/css/boostrap.min.css" />
-    <link rel="stylesheet" href="/assets/css/boostrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/boostrap.min.css" />
   </head>
-  <body class="bg-info">
-    <div class="container center m-2">
-      <header class="">
-        <h1>Control de Asistencias</h1>
+  <body class="bg-dark-subtle">
+    <div class="container">
+      <header class="center m-4">
+        <h1 class="text-center">Asistencias Disponibles</h1>
       </header>
     </div>
-    
-    <div id="eventList">
-      <div style="display: flex; align-items: center">
-        <h2 class="ms-3">
-          <a href="/DASHBOARD/index.html">
-            <ion-icon name="home-outline" class="ms-4"></ion-icon> </a
-          >Asistencias Disponibles
-        </h2>
-      </div>
-      <div class="d-flex gap-3">
-        <div>
-          <div class="input-group mb-3">
-            <div class="form-outline" data-mdb-input-init>
-              <input
-                type="search"
-                id="searchId"
-                class="form-control ms-4"
-                placeholder="Escriba un ID"
-              />
-            </div>
-            <button
-              onclick="searchControlById()"
-              type="button"
-              class="me-3 btn btn-primary"
-              data-mdb-ripple-init
-            >
-              Buscar
-            </button>
-          </div>
-        </div>
-        <div>
-          <!-- Button trigger modal -->
-          <button
-            type="button"
-            class="btn btn-dark"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Generar Reporte
-          </button>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Reporte por Periodo
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="mb-3">
-                    <label for="NumControl" class="form-label"
-                      >NumControl</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="NumControl"
-                      placeholder="Ingrese el número de Control"
-                    />
-                    <label for="fechaInicio" class="form-label"
-                      >Fecha Inicio</label
-                    >
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="fechaInicio"
-                      placeholder="Ingrese la fecha de Inicio"
-                    />
-                    <label for="fechaFin" class="form-label">Fecha Fin</label>
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="fechaFin"
-                      placeholder="Ingrese la fecha de Fin"
-                    />
+    <div class="container">
+      <div id="eventList">
+        <div style="display: flex; align-items: center">
+          <h2 class="ms-3">
+            <a href="/DASHBOARD/index.html">
+              <ion-icon name="home-outline" class="ms-4"></ion-icon>
+            </a>
+          </h2>
+        </div>
+        <div class="d-flex gap-3">
+          <div>
+            <div class="input-group mb-3">
+              <div class="form-outline" data-mdb-input-init>
+                <input
+                  type="search"
+                  id="searchId"
+                  class="form-control ms-4"
+                  placeholder="Número de control"
+                />
+              </div>
+              <button
+                onclick="searchControlById()"
+                type="button"
+                class="me-3 btn btn-primary"
+                data-mdb-ripple-init
+              >
+                Buscar
+              </button>
+            </div>
+          </div>
+          <div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Generar Reporte
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Reporte por periodo
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-success"
-                    id="generateExcel"
-                  >
-                    Generar Reporte
-                  </button>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="NumControl" class="form-label"
+                        >NumControl</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="NumControl"
+                        placeholder="Ingrese el número de Control"
+                      />
+                      <label for="fechaInicio" class="form-label"
+                        >Fecha Inicio</label
+                      >
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="fechaInicio"
+                        placeholder="Ingrese la fecha de Inicio"
+                      />
+                      <label for="fechaFin" class="form-label">Fecha Fin</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="fechaFin"
+                        placeholder="Ingrese la fecha de Fin"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancelar
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      id="generateExcel"
+                    >
+                      Generar Reporte
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+            <button class="btn btn-warning" onclick="refreshEvents()">
+              Refrescar
+            </button>
           </div>
-          <button class="btn btn-warning" onclick="refreshEvents()">
-            Refrescar
-          </button>
         </div>
+        <ul id="controls"></ul>
+        <nav aria-label="Page navigation example" id="nav-pagination"></nav>
       </div>
-      <ul id="controls"></ul>
-      <nav aria-label="Page navigation example" id="nav-pagination"></nav>
     </div>
+
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <script src="/assets/js/comun.js"></script>
     <script

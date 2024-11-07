@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/boostrap.min.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>QR Alumno</title>
-</head>
-<body class="body">
-
-    <header class="header">
-        <div class="header_qr" id="newQrData">
-
+  </head>
+  <body>
+    <div class="container">
+        <div class="card  position-absolute top-50 start-50 translate-middle">
+                <div class="card-body" >
+                    <div id="newQrData"></div>
+                </div>
         </div>
-    </header>
-    
+    </div>
+
 
     <script src="/assets/js/comun.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -24,5 +23,13 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
+
+<style>
+  #newQrData img {
+    width: 400px; 
+    height: 400px;
+    object-fit: cover;
+}
+</style>
